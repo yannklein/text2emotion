@@ -1,0 +1,11 @@
+<h1>Get emotions!</h1>
+<form method="post" action="/sentence">
+  <label>Sentence</label>
+  <input type="text" name="sentence">
+  <input type="submit" />
+</form>
+
+<% unless @score.nil? %>
+<h1>Your happiness score</h1>
+<p><%= @score %></p>
+<% end %>
